@@ -1,5 +1,5 @@
 # Exercise 1
-
+### `click here =>` [Live preview link](https://react-exercises-1-mahabubdev.netlify.app/)
 ![Exercise 1](./screenshot.png)
 
 ## Requirements
