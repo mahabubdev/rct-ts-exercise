@@ -4,8 +4,11 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 body {
-    font-family: Roboto-Bold;
+    // font-family: Roboto-Bold;
+    font-family: 'Roboto', sans-serif;
     font-size: 84px;
     color: #37474F;
 }

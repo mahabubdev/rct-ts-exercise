@@ -9,7 +9,7 @@ const App: React.FC = () => {
     });
 
     // clock
-    const [clock, setClock] = useState<String>(clockTime);
+    const [clock, setClock] = useState<String>("");
 
     useEffect(() => {
         setClock(new Date().toLocaleString("en-US", {
