@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
     // font-family: Roboto-Bold;
@@ -15,9 +15,35 @@ body {
     color: #37474F;
 }
 
+.btn {
+    background: #5E19F5;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    // font-family: Roboto-Regular;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
 .wrap {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
+    .btn_area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 3rem;
+        margin-top: 2.5rem;
+
+        .btn {
+            cursor: pointer;
+            padding: .5rem 2rem;
+            text-transform: capitalize;
+        }
+    }
 }

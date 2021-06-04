@@ -1,21 +1,15 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, FC } from "react";
 
-const App: React.FC = () => {
-
-    // clock
-    const [clock, setClock] = useState<String>("");
-
-    useEffect(() => {
-        setClock(new Date().toLocaleString("en-US", {
-            hour12: true,
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit"
-        }));
-    })
+const App: FC = () => {
+    // clicks
+    const [click, setClick] = useState(0);
 
     return <div className="wrap">
-        <p>{clock}</p>
+        <p>Clicks: {click}</p>
+        <div className="btn_area">
+            <button className="btn" onClick={() => setClick(click + 1)}>increment</button>
+            <button className="btn" onClick={() => setClick(click - 1)}>decrement</button>
+        </div>
     </div>
 }
 
