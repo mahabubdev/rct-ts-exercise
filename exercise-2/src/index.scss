@@ -1,0 +1,23 @@
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    // font-family: Roboto-Bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 84px;
+    color: #37474F;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
