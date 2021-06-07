@@ -21,7 +21,13 @@ class State {
     }
 }
 
-const AppState = new State();
+const AppState: StateProps = new State();
+
+type StateProps = {
+    count: number;
+    increase: () => void;
+    decrease: () => void;
+}
 
 
 ReactDOM.render(<App count={AppState} />, document.getElementById("e2"));
